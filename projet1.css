@@ -1,0 +1,951 @@
+/*police de caractere */
+ @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+ @font-face
+ {
+font-family: 'FontAwesome';
+src: url('ecrit/fontawesome-webfont.eot?v=4.7.0');
+src: url('ecrit/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('css/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('css/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('css/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('css/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+html, body 
+{
+font-family: Roboto, FontAwesome,sans-serif;
+margin: 0;
+padding: 0;
+  }
+section
+{
+padding: 30px 0px 30px 0px ;
+}
+p 
+{
+margin-top:0px;
+display:flex;
+}
+/*menu */
+
+#logo
+{   
+float: left;
+display: flex;
+flex-direction: row;
+align-items: baseline;
+padding-left: 100px;
+}
+#logo img
+{
+display: flex;
+width: 130%;
+height: 130%;
+}
+
+#banniere_menu
+{
+top: 0%;
+max-width: 100%;
+max-height:150px; 
+min-width: 100%;
+min-height: 70px;
+position:fixed;
+background:#FFFFFF ;  
+background-size: contain; 
+z-index:1000;
+padding-bottom: 0px;
+padding-top: 0px;
+}
+
+/*naviguation*/
+nav
+{
+display: block;
+}
+nav ul
+{
+list-style-type: none;
+display: flex;
+float: right;
+padding-right: 90px;
+}
+nav li
+{
+margin-right: 15px;
+margin-top: 5px; 
+padding: 10px;
+
+}
+nav a
+{
+font-size: 1.3em;
+color: #807D7A;
+padding-bottom: 6px;
+text-decoration: none;
+}
+.naviguation :hover
+{
+color: #3491b2;
+border-top: 3px solid ;
+padding-top: 15px;
+}
+ /*--SLIDER--*/
+
+#banniere_description
+{
+display: block;
+margin-top:7%;
+width:100%; 
+min-height: 290px;
+max-height: 500px;
+position: sticky;
+background:url('images/bg1.jpg')no-repeat;
+background-size: 100%;
+
+}
+.bouton_bleu
+{
+display: inline-block;
+float: left;
+height: 25px;
+position: static;
+background: #5cadd3 ;
+border-radius: 3px;
+font-size: 1.2em;
+text-align: center;
+padding: 8px 8px 8px 8px;
+color: white;
+text-decoration: none;
+right:15%; 
+border: solid 3px #e5e5e5;
+border-color: #5cadd3;
+border-bottom-color: #3392be ;
+}
+ .retrait /*marge pour le bouton bleu*/
+{
+margin-left:190px;
+}
+#progressbar 
+{
+margin-left: auto;
+position: absolute;
+display: block;
+background-color:#3491b2 ;
+border-radius: 13px;
+width: 20%;
+padding: 3px;  
+bottom: -5px;
+}
+/*acroche baniere*/
+.texte
+{
+display: inline-block;
+position: sticky;
+color: white;      
+margin-left: 70px;
+margin-top: -20px;
+margin-left: 120px;
+padding: 0px 0px 0px 70px;
+}
+#chevron_left 
+{
+position : absolute;
+bottom: 50%;
+right: 0px;
+color: white;
+display: block;
+margin-bottom: -6px;
+}
+.lune-g
+{
+top: 35%;
+position: absolute;
+height: 60px;
+width: 30px;
+background: rgb(67, 66, 70);
+border-bottom-right-radius: 100px;
+border-top-right-radius: 100px;
+}
+.lune-d
+{
+position: absolute;
+top: 35%;
+right: 0%;
+background: rgb(67, 66, 70);
+height: 60px;
+width: 30px;
+border-bottom-left-radius: 100px;
+border-top-left-radius: 100px;
+}
+#chevron_right
+{
+position : absolute;
+bottom: 50%;
+left: 0px;
+color: white;
+display: block;
+margin-bottom: -6px;
+}
+#web strong /*titre bleu*/
+{
+color:#3491b2;
+}
+#web
+{
+font-size: 28px;
+display: inline-block;
+position: sticky;
+color: white;
+padding: 3% 0 0px 70px;
+} 
+/*---CONSIGNE GENERAL---*/
+
+ h1
+{
+display:flex;
+font-size: 1em;
+padding: 10px;
+margin-top: 3px;
+margin-bottom: 19px;
+margin-left: 120px;
+}
+   
+h3
+{
+margin: auto;
+margin-top: 40px;
+letter-spacing: 5px;
+text-align: center;
+font-size: 2em;
+}
+
+/*---SERVICES---*/
+
+/*gestion textes services*/
+
+#services .services-list dd 
+{
+font-family: Roboto;
+text-align: justify;
+padding: 10px 40px 25px 40px ;
+}
+/*icone separation des sections*/
+.separator 
+{
+width: 140px;
+border-bottom: solid 1px #ebebeb;
+margin: auto;
+margin-bottom: 20px;
+}
+/*icone separation des sections*/
+.separator::after 
+{
+content: '';
+width: 14px;
+height: 14px;
+display: block;
+position: relative;
+margin-left: 58px;
+top: 12px;
+border-radius: 14px;
+background-color: #5cadd3;
+}
+/*icone separation des sections*/
+.separator::after 
+{
+border: solid 5px #fff;
+}
+/*boite section texte +deco sns imac*/
+.services-list 
+{
+float: right;
+display:flex;
+}
+/*boite section texte +deco avec imac*/
+.services-content
+{
+display:flex;
+justify-content:space-between;
+}
+/*--icones--*/
+fa-chart-pie
+{
+display: block;
+padding: 5px;
+}
+dd
+{
+margin-top: 10px;
+}
+.dt
+{
+padding: 20px ;
+}
+.dt-icone 
+{
+display: block;
+float: left;
+width: 62px;
+height: 62px;
+border-radius:50%;
+border: 1px solid #d7d7d7;
+text-align: center;
+line-height: 62px;
+color: #5cadd3;
+font-size: 25px;
+}
+.dt-icone::before 
+{
+display:block;  
+float: left;
+content: '';
+display: block;
+position: absolute;
+margin-top: 19px;
+margin-left: 55px;
+width: 14px;
+height: 14px;
+border-radius: 14px;
+background-color: #5cadd3;
+}
+.dt-icone ::before 
+{
+display:block;  
+float: left;
+border: solid 5px #fff;
+margin-top: 10px;
+}
+.mac
+{
+  display: none;
+  float: left;
+}
+.imac
+{
+display:flex; 
+flex-wrap: nowrap; 
+float: left;
+box-sizing: content-box;
+position: sticky;
+width:1800px; 
+height:500px;
+background:url('images/main-feature.png')no-repeat;
+background-size: contain;
+}
+.titre
+{
+font-weight: bold;  
+margin-left: 80px;
+margin-top: 5px;
+}
+.acroche /*texte d'accroche*/
+{
+font-family: Roboto;
+text-align: center;
+margin-top:0px;
+display:block;
+}
+/*----PROJET----*/
+/*-----menu du projet------*/
+.project-menu 
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.menu-btn 
+{
+  display: flex;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.arrow 
+{
+  display: none;
+  position: absolute;
+  margin: 40px 0 0 44px;
+  color: #3392be;
+}
+
+.menu-btn-item
+ {
+  display: block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #65696e;
+  background-color: #e5e5e5;
+  border: solid 3px #e5e5e5;
+  margin: 0px;
+}
+
+.menu-btn-item.is-active, .menu-btn-item:hover 
+{
+  background-color: #5cadd3;
+  color: #fff;
+  border-color: #5cadd3;
+  border-bottom-color: #3392be;
+}
+
+.menu-btn-item.is-active .arrow 
+{
+  display: block;
+}
+
+.menu-btn-item a 
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.menu-anchor {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+/*section general*/
+#Projects
+{
+margin: 0 auto;
+background-color:#F5F5F5 ;
+width: 100%;
+height: 100%;
+justify-content: flex-start;
+} 
+/*boite a projet*/
+#project-list 
+{
+display:flex;
+flex-direction: row;
+max-width: 1300px;
+min-width: 200px;
+box-sizing: border-box;
+flex-wrap: wrap;
+justify-content: space-evenly;
+background-color:#F5F5F5 ;
+margin: auto;
+}
+.imgProjet 
+{
+justify-content: flex-start;
+display: flex;
+margin-top: 30px;
+width: 200px;
+box-sizing: border-box;
+}
+.Projects
+{
+width: 250px;
+}
+.ligne
+{
+display: flex;
+flex-direction: row;
+align-items :flex-start;
+}
+
+/* fond selection*/
+#Cat-Creative:target ~ #Projects .project-content .project-menu ul #MenuBtnCreative,
+#Cat-Corporate:target ~ #Projects .project-content .project-menu ul #MenuBtnCorporate,
+#Cat-Portfolio:target ~ #Projects .project-content .project-menu ul #MenuBtnPortfolio
+{
+  background-color: #5cadd3;
+  color: #fff;
+  border-color: #5cadd3;
+  border-bottom-color: #3392be;
+}
+/* fleche suivante*/
+#Cat-Creative:target ~ #Projects .project-content .project-menu ul #MenuBtnCreative .arrow,
+#Cat-Corporate:target ~ #Projects .project-content .project-menu ul #MenuBtnCorporate .arrow,
+#Cat-Portfolio:target ~ #Projects .project-content .project-menu ul #MenuBtnPortfolio .arrow
+ {
+  display: block;
+}
+
+/*deselection 1er */
+#Cat-Creative:target ~ #Projects .project-content .project-menu ul #MenuBtnAllworks,
+#Cat-Portfolio:target ~ #Projects .project-content .project-menu ul #MenuBtnAllworks,
+#Cat-Corporate:target ~ #Projects .project-content .project-menu ul #MenuBtnAllworks 
+{
+  color: #65696e;
+  background-color: #e5e5e5;
+  border: solid 3px #e5e5e5;
+}
+/*fleche arow*/
+
+#Cat-Creative:target ~ #Projects .project-content .project-menu ul #MenuBtnAllworks .arrow,
+#Cat-Portfolio:target ~ #Projects .project-content .project-menu ul #MenuBtnAllworks .arrow,
+#Cat-Corporate:target ~ #Projects .project-content .project-menu ul #MenuBtnAllworks .arrow 
+{
+  display: none;
+}
+
+/*legende emplacement*/
+figcaption 
+{
+flex-wrap: wrap;
+position: absolute;
+background-color:rgba(0,0,0,.5);
+width: 200px;
+margin-bottom: 0px;
+z-index: 900;
+height: 99px;
+margin-top: -100px;
+opacity: 0;
+}
+
+.project:hover figcaption
+{
+opacity: 1;
+}
+
+/*icone de deco*/
+.fa-eye 
+{
+position: absolute;
+color: white;
+padding: 2px ;
+background-color: #3491b2;
+padding: 7px ;
+border-radius: 29px;
+height: 20px;
+width: 20px;
+border:2px solid white;
+margin-left: 75%;
+margin-top:-5%;
+}
+/*texte d legende*/
+.legend 
+{
+color: white;
+padding: 10px;
+margin-top: 15px;
+z-index: 1000;
+}
+
+/* -----SECTION CONTACT------*/
+/*filtre bleu*/
+.filtre 
+{
+width  : 100%;
+height : 800px;
+background-color: #3491b2;
+position: absolute; 
+opacity: 0.50;
+pointer-events:inherit;
+}
+
+/*lien google map*/
+iframe 
+{
+position: absolute;
+display: flex;
+z-index: 5;
+opacity: 0.5;
+width: 100%;
+}
+
+/*formulaire CONTACT*/
+
+.form 
+{
+width:260px; 
+position: absolute; 
+margin-top: 50px;
+right: 150px;
+padding: 10px;
+border: 1px ;
+background-color: white;
+z-index: 900;
+opacity: 0.85;
+}
+
+h4
+{
+text-align: center;
+}
+.info
+{
+font-weight: bolder;
+font-size: 22px;
+margin-left: -14px;
+}
+.info-soustitre
+{
+font-weight: bolder;
+color:#65696e;
+
+}
+.adresse
+{
+color:#65696e;
+}
+
+fieldset
+{
+border: none;
+margin-left: -10px;
+}
+label
+{
+display: inline-block;
+width: 80px;
+}
+/*espace entré général*/
+input,textarea 
+{
+font-family: Roboto;
+font: 1em ;
+width: 230px;
+height: 25px;
+margin-top: 10px;
+box-sizing: border-box;
+border: 1px solid grey; 
+resize:none;
+border-radius: 5px;
+margin-left: 5px;
+} 
+/*espace message*/
+#msg 
+{
+font: 1em ;
+width: 230px;
+height: 200px;
+box-sizing: border-box;
+border: 1px solid grey; 
+resize:none;
+border-radius: 5px;
+} 
+.send
+{
+  font-size: 15px;
+  background-color: #5cadd3;
+  width: 110px;
+  border-radius: 2px;
+  color:#fff;
+  border: solid 3px #e5e5e5;
+  border-color: #5cadd3;
+ border-bottom-color: #3392be ;
+} 
+
+/*------RESPONSIVES-------*/
+
+@media screen and (max-width: 609px)
+{
+/*menu naviguation*/
+ 
+  nav li
+  {
+  display: flex;
+  font-size: 11px;
+  padding: 5px;
+  }
+  nav ul
+  {
+  padding: 0px;
+  }
+  #logo
+  {
+  padding: 0px;
+  }
+  /*section baniere images*/ 
+  #web
+  {
+  font-size: 15px;
+  padding: 0;
+  margin-top: -15px;
+  }
+  #banniere_description
+  {
+  margin-top: 100px;
+  width: 100%;
+  min-height: 100px;
+  max-height: 200px;
+  background-position:right top;
+  }
+  .bouton_bleu
+  {
+  display: none;
+  }
+  .lune-d
+  {
+  display: none;
+  }
+  .lune-g
+   {
+  display: none;
+  }
+  h2
+  {
+  padding: 0 0 0 0;
+  margin-top: 2px;
+  font-size: 1em;
+  }
+
+  .texte
+  {
+  display: none;
+  }
+  #progressbar 
+   {
+  display: none;
+  }
+  #chevron_left 
+  {
+  display: none;
+  }
+  #chevron_right
+  {
+  display: none;
+  }
+  /*section services*/
+  .services-content
+  {
+  flex-direction: column;
+  }
+  .imac
+  {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  }
+  .services-list
+  {
+  float: left;
+  }
+  p
+   {
+  font-size: 13px;
+  padding: 3px;
+  } 
+  dd
+   {
+  font-size: 13px;
+  }
+/*section projet*/
+
+  .menu-btn-item a 
+{
+  font-size: 10px;
+}
+  #Projects nav li
+  {
+  padding :2px;
+  }
+ .menu-btn 
+ {
+  font-size: 10px;
+  }
+  .arrow 
+  {
+  display: none;
+  margin: 57px 0 0 25px;
+  }
+  .legend 
+  {
+  font-size: 19px;
+  }
+  .menu-btn-item 
+  {
+  display: block;
+  width: 55px;
+  height: 60px;
+  }
+  #contact
+  {
+   
+  }
+  
+  .form
+  {  
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  
+  }
+  .info
+  {
+  margin-left: -15px; 
+  }
+  #maps
+  {
+  margin-top:730px;
+  }
+  
+  h1
+   {
+  margin: 0px;
+  }
+  }
+@media all and (min-width: 610px) and (max-width: 1000px)
+{
+ section
+  {
+  padding: 0;
+  }
+  /*menu naviguation*/
+   nav ul
+  {
+  padding: 0px;
+  }
+  h1
+  {
+  padding: 0px;
+  margin: 0px;
+  }
+  .texte
+  {
+  margin: 0px;
+  }
+  #logo
+  {
+  padding: 0px;
+  width: 150px;
+  margin-top: 20px;
+  }
+  nav li
+  {
+  margin-top: 0px;
+  padding: 7px;
+  }
+
+   /*section services*/
+    .services-content
+  {
+  flex-direction: column;
+  }
+  .imac
+  {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  }
+  .services-list
+  {
+  float: left;
+  }
+   #banniere_description
+  {
+  margin-top: 90px;
+  background-size: 100%;
+  width: 100%;
+  height: 350px;
+  background-position:right top;
+  }
+  .bouton_bleu
+  {
+  display: none;
+  }
+   .lune-d
+  {
+  display: none;
+  }
+  .lune-g
+   {
+  display: none;
+  }
+  #progressbar 
+   {
+  display: none;
+  }
+
+  .form
+  {
+  margin-left: 40%;
+  }
+   /*section projet*/
+}
+@media all and (min-width: 1200px) and (max-width: 1500px)
+{
+
+  /*menu naviguation*/
+  nav li
+  {
+  margin-top: 0px;
+  padding: 7px;
+  }  
+   #logo
+   {
+  width: 150px;
+  margin-top: 20px;
+  }
+/*section projet*/
+  .project-content
+  {
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ /*section services*/
+  #services
+  {
+  margin-left: auto;
+  margin-right: auto;
+  }
+  #bloc-slider
+  {
+  display:contents;
+  }
+  .services-list
+  {
+   margin-right:10%;
+  }
+  #banniere_description
+  {
+  margin-top: 40px;
+  padding-bottom: 0px;
+  width: 100%;
+  min-height: 400px;
+  max-height: 700px;
+  margin-left:auto;
+  margin-right:auto;
+  }
+  #web
+  {
+   font-size: 40px;
+  }
+ #project-list
+ {
+   margin: auto;
+  }
+
+}
+  @media screen and (min-width: 1500px)
+{
+  #banniere_description
+  {
+  margin-top: 40px;
+  padding-bottom: 0px;
+  width: 100%;
+  min-height: 500px;
+  max-height: 1000px;
+  margin-left:auto;
+  margin-right:auto;
+  }
+  #web
+ {
+ font-size: 38px;
+  } 
+   #project-list
+ {
+ margin: auto;
+
+  }
+
+}
+
